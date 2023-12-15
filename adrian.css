@@ -155,18 +155,18 @@
   }
 
   .luna{
-    position:relative;
+    position:absolute;
     margin:auto;
-    top:40px;
+    top:-400px;
     bottom:0;
-    left:550px;
+    left:-1050px;
     right:0;
     background-color:transparent;
     height:150px;
     width:150px;
     border-radius:50%;
     box-shadow:40px 10px 0 0 rgb(204, 204, 211);
-    transform: rotate(-25deg);
+    transform: rotate(25deg);
   }
 
   .estrella {
