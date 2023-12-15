@@ -10,7 +10,7 @@
     margin: 0 auto;
     width: 500px;
     height: 500px;
-    /*border: thin solid black;*/
+   
   }
 
 .muñeco{
@@ -79,3 +79,18 @@
     border-radius: 50%;
     margin: 5px;
 }
+
+
+#relativo {
+    animation-name: anim-muñeco;
+    animation-duration: 3000ms;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes anim-muñeco {
+    0%   {left:0px; top:0px;}
+    50%  {left:200px; top:0px;}
+    100% {left:0px; top:0px;}
+  }
