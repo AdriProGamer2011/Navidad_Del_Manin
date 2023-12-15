@@ -5,10 +5,6 @@
     font-family: sans-serif;
 }
 
-body{
-    background-color: aqua;
-}
-
 .muñeco{
     display: flex;
     align-items: center;
