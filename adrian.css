@@ -142,6 +142,19 @@
     transform: rotate(-10deg);
   }
   
+  .lazo::before{
+      position: absolute;
+      top: 0; left: 20px;
+      background: #FFF;
+      width: 12px;
+      height: 25px;
+      border-radius: 0 80% 20% 80%;
+      border: 3px solid #59C3C3;
+      transform: rotate(60deg);
+      content: '';
+  }
+
+  
   .lazo:after {
     position: absolute;
     top: 0; left: 20px;
@@ -153,6 +166,7 @@
     transform: rotate(60deg);
     content: '';
   }
+
   .luna{
     position:relative;
     margin:auto;
