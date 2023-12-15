@@ -5,54 +5,62 @@
     font-family: sans-serif;
 }
 
+#relativo{
+    position: relative;
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+    border: thin solid black;
+  }
+
 .muñeco{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 200px;
+    margin-top: 420px;
 }
 
 .cabeza{
-    width: 180px;
-    height: 180px;
+    width: 90px;
+    height: 90px;
     background: white;
     border-radius: 50%;
 }
 
 .ojos{
     text-align: center;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .ojos span{
     display: inline-block;
-    width: 15px;
-    height: 40px;
+    width: 7px;
+    height: 20px;
     background: #333;
     border-radius: 50%;
-    margin: 0 20px;
+    margin: 0 10px;
 }
 
 .nariz{
-    width: 15px;
-    height: 30px;
+    width: 7px;
+    height: 15px;
     background: red;
     border-radius: 50%;
     margin: 0 auto;
 }
 
 .boca{
-    width: 40px;
-    height: 15px;
+    width: 20px;
+    height: 7px;
     background: #333;
     border-radius: 50%;
     margin: 15px auto 0;
 }
 
 .cuerpo{
-    width: 250px;
-    height: 250px;
+    width: 125px;
+    height: 125px;
     background: white;
     border-radius: 50%;
     margin-top: -30px;
@@ -63,8 +71,8 @@
 }
 
 .cuerpo span{
-    width: 12px;
-    height: 12px;
+    width: 6px;
+    height: 6px;
     background: #333;
     border-radius: 50%;
     margin: 5px;
