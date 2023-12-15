@@ -1,0 +1,232 @@
+
+  .container {
+    position: absolute;
+    left: 900px;
+    top: 285px;
+  }
+ 
+  body{
+    background-color:midnightblue;
+  }
+
+  .arbol {
+    position: absolute;
+  }
+
+  .estrella {
+   z-index: 1;
+   position: absolute;
+   left:-49px; 
+   top:-49px;
+   color: red;
+   width: 0px;
+   height: 0px;
+   border-right:  100px solid transparent;
+   border-bottom: 70px  solid #FFE066;
+   border-left:   100px solid transparent;
+   transform: rotate(35deg) scale(.2);
+}
+
+.estrella:before {
+  border-bottom: 80px solid #FFE066;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -45px;
+  left: -65px;
+  content: '';
+  transform: rotate(-35deg);
+
+}
+.estrella:after {
+  position: absolute;
+  color: red;
+  top: 3px;
+  left: -105px;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid #FFE066;
+  border-left: 100px solid transparent;
+  transform:rotate(-70deg);
+  content: '';
+}
+
+  .tronco {
+    width: 210px;
+    height: 10px;
+    background: #CCC;
+    position: absolute;
+    top: 304px; left: -45px;
+    border-radius: 100%;
+  }
+  
+  .tronco:after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: #84714F;
+    position: absolute;
+    top: -25px; left: 83px;
+  }
+  
+  .base {
+    position: absolute;
+    width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 100px solid #499F68;
+  }
+  
+  .base-dos{
+    position: absolute;
+    top: 30px; left: -10px;
+    border-left: 60px solid transparent;
+      border-right: 60px solid transparent;
+      border-bottom: 120px solid #499F68;
+  }
+  
+  .base-tres{
+    position: absolute;
+    top: 50px; left: -30px;
+    border-left: 80px solid transparent;
+      border-right: 80px solid transparent;
+      border-bottom: 160px solid #499F68;
+  }
+  
+  .base-cuatro{
+    position: absolute;
+    top: 80px; left: -50px;
+    border-left: 100px solid transparent;
+      border-right: 100px solid transparent;
+      border-bottom: 200px solid #499F68;
+  }
+  
+  .regalo {
+    z-index: 1;
+    position: absolute;
+    top: 250px;  left: 120px;
+    width: 60px;
+    height: 60px;
+    background: #F45B69;
+  }
+  
+  .tapa {
+    position: absolute;
+    left: -3px;
+    width: 66px;
+    height: 10px;
+    background: #F45B69;
+    border-bottom: 1px solid #AAA;
+  }
+  
+  .envoltorio {
+    position: absolute;
+    left: 25px;
+    background: #59C3C3;
+    width: 10px;
+    height: 60px;
+  }
+  
+  .lazo {
+    position: absolute;
+    top: -30px; left: 10px;
+    background: #FFF;
+    width: 12px;
+    height: 25px;
+    border-radius: 0 80% 20% 80%;
+    border: 3px solid #59C3C3;
+    transform: rotate(-10deg);
+  }
+  
+  .lazo:after {
+    position: absolute;
+    top: 0; left: 20px;
+    background: #FFF;
+    width: 12px;
+    height: 25px;
+    border-radius: 0 80% 20% 80%;
+    border: 3px solid #59C3C3;
+    transform: rotate(60deg);
+    content: '';
+  }
+  .luna{
+    position:relative;
+    margin:auto;
+    top:40px;
+    bottom:0;
+    left:550px;
+    right:0;
+    background-color:transparent;
+    height:150px;
+    width:150px;
+    border-radius:50%;
+    box-shadow:40px 10px 0 0 rgb(204, 204, 211);
+    transform: rotate(-25deg);
+  }
+
+  .estrella {
+    animation-name: rotacion-estrella;
+    animation-duration: 3000ms;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+  }
+
+  .luna {
+    animation-name: rotacion-luna;
+    animation-duration: 3000ms;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+  }
+
+  .cabeza{
+      width: 0; 
+      height: 0; 
+      border-top: 60px solid transparent;
+      border-bottom: 60px solid transparent;
+      border-left: 60px solid green;
+  }
+  
+  
+  @keyframes rotacion-estrella {
+  0% {
+  transform: rotate(72deg);
+  }
+  25% {
+  transform: rotate(144deg);
+  }
+  50% {
+  transform: rotate(216deg);
+  }
+  75% {
+  transform: rotate(288deg);
+  }
+  
+  100% {
+  transform: rotate(360deg);
+  }
+  }
+
+
+  @keyframes rotacion-luna {
+    0% {
+    transform: rotate(-25deg);
+    }
+    25% {
+    transform: rotate(50deg);
+    }
+    50% {
+    transform: rotate(-75deg);
+    }
+    75% {
+    transform: rotate(50deg);
+    }
+    100% {
+    transform: rotate(-25deg);
+    }
+  }
