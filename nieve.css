@@ -80,3 +80,17 @@
     border-radius: 50%;
     margin: 5px;
 }
+
+.muñeco {
+    animation-name: anim-muñeco;
+    animation-duration: 3000ms;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes anim-muñeco {
+    0%   {left:0px; top:0px;}
+    50%  {left:400px; top:0px;}
+    100% {left:0px; top:0px;}
+  }
