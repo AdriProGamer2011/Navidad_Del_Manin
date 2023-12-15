@@ -14,11 +14,12 @@
   }
 
 .muñeco{
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 420px;
+    margin-top: 400px;
 }
 
 .cabeza{
